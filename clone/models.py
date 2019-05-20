@@ -11,8 +11,8 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     bio = models.CharField(max_length=350) 
-    profile_pic = models.ImageField(upload_to='ProfilePicture/')
-    profile_avatar = models.ImageField(upload_to='AvatorPicture/')
+    profile_pic = models.ImageField(upload_to='Ppicture/')
+    profile_avatar = models.ImageField(upload_to='Apic/')
     date = models.DateTimeField(auto_now_add=True, null= True)  
 
 
@@ -22,7 +22,7 @@ class Profile(models.Model):
 
 class Image(models.Model):
 
-    image = models.ImageField(upload_to ='pictsagram/')
+    image = models.ImageField(upload_to ='Pgram/')
     image_caption = models.CharField(max_length=700)
     tag_someone = models.CharField(max_length=50,blank=True)
     imageuploader_profile = models.ForeignKey(User, on_delete=models.CASCADE,null='True', blank=True)
