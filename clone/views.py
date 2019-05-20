@@ -24,3 +24,7 @@ def index(request):
 @login_required(login_url='/accounts/login/')
 def explore(request):
     return render(request, 'display/explore.html')
+
+@login_required(login_url='/accounts/login/')
+def notification(request):
+    return render(request, 'display/message.html')
