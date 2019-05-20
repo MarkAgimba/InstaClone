@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap3',
     'clone',
-    # 'bootstrap3'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'insta.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'minsta',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'insta',
         'USER': 'mark',
         'PASSWORD': '12345'
     }

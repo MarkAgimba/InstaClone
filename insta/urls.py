@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import include, path
 from clone import views
 from django.conf.urls.static import static
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('clone.urls')),
+    path('accounts/', include('django_registration.backends.one_step.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
     # path('accounts/', include('registration.backends.simple.urls')),
 ]
