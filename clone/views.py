@@ -20,3 +20,7 @@ def index(request):
     next = request.GET.get('next')
     if next: return redirect(next)
     return render(request, 'display/home.html',  {"all_images": all_images}, {"all_users":all_users})
+
+@login_required(login_url='/accounts/login/')
+def explore(request):
+    return render(request, 'display/explore.html')
