@@ -19,9 +19,9 @@ body {
                                     }
 
                                     .loginform{
-                                      width: 25%;
-                                      margin-left: 3%;
-                                      margin-top: 6%;
+                                      width: 55%;
+                                      margin-left: 2%;
+                                      margin-top: 1%;
 
                                     }
 
@@ -224,8 +224,8 @@ body {
     
 
     .loginform{
-        width: 30%;
-        margin-left: -20%;
+        width: 40%;
+        margin-left: -50%;
     }
 
     .phonenav{
@@ -347,7 +347,7 @@ body {
         display: none;
     }
     .loginform{
-        width: 40%;
+        width: 50%;
     }
 
     /* Navbar */
@@ -463,8 +463,8 @@ body {
     }
     .loginform{
         width: 170px;
-        margin-left: auto;
-        margin-right: auto
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     /* Navbar */
@@ -731,7 +731,7 @@ body {
         }
         .loginform{
             width: 40%;
-            margin-left: 27%;
+            margin-left: 47%;
         }
         .logincont{
             display: inline;
@@ -892,7 +892,7 @@ body {
 
         .loginform{
             width: 40%;
-            margin-left: 27%
+            margin-left: 47%
         }
 
         .login-playstorebtn{
