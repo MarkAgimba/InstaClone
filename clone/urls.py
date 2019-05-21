@@ -7,7 +7,6 @@ from django.shortcuts import render, redirect
 urlpatterns=[
     path('',views.index, name='index'),
     path('explore',views.explore,name ='explore'),
-    # path('message',views.message,name ='message'),
     path('profile',views.profile,name ='profile'),
     path('login',views.login,name ='login'),
     path('logout',views.index,{'next_page': 'accounts:login'}, name='logout'),

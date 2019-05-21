@@ -1,29 +1,18 @@
 {%extends "registration/base.html"%} {% load bootstrap3 %} {% block content %}
 <div class="container">
-    <div class="logincont">
-        <!-- Image beside Login-Form -->
-        
+    <div class="logincont">   
         <div class="loginimage">
             <img src="../../static/images/IG1.jpg " alt="instagram login phone ">
         </div>
         
-        <!-- Output to Display error in login -->
         <div class="loginform">
             {% if form.errors %}
             <p > Password or Username is incorrect </p>
             {% endif %}
-            <!--Collapse Output to Display error in login -->
-        
 
-            <!-- BootStrap class to add border to login form -->
             <div  class="panel panel-default">
-
-                <!-- Instagram image at the top of Login form -->
-                
                     <img src="../../static/images/instalogowhite.png" alt="signuplogo " style="width:250px; height:80px;margin: 5px auto; display: block;">
                 
-                <!--Collaplse Instagram image at the top of Login form -->
-
                 <div class="panel-body">
 
                     <form action="/accounts/login/" method="post">
