@@ -12,7 +12,17 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import dj_database_url
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
+def look_folder_tree(root):
+    result = ()
+    for dir_name, sub_dirs, file_names in os.walk(root):
+        for sub_dir_name in sub_dirs:
+            result += (os.path.join(dir_name, sub_dir_name),)
+    return result
+
+# Django settings for project.
+
+PROJECT_DIR = os.path.dirname(__file__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -127,10 +137,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
-]
-
+# STATICFILES_DIRS = [os.path.join(ROOT_PATH, 'static')]
+STATICFILES_DIRS = look_folder_tree(STATIC_ROOT)
 #Login Redirecting to Home
 LOGIN_REDIRECT_URL = '/'
 
@@ -139,7 +147,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # django_heroku.settings(locals())
 
-STATICFILES_DIRS= 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_DIRS= 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'

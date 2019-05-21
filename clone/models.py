@@ -13,7 +13,7 @@ class Profile(models.Model):
     bio = models.CharField(max_length=350) 
     profile_pic = models.ImageField(upload_to='Ppicture/')
     profile_avatar = models.ImageField(upload_to='Apic/')
-    date = models.DateTimeField(auto_now_add=True, null= True)  
+    # date = models.DateTimeField(auto_now_add=True, null= True)  
 
     def get_first_name(self):
         return self.first_name
