@@ -16,7 +16,7 @@ class Profile(models.Model):
     date = models.DateTimeField(auto_now_add=True, null= True)  
 
     def get_first_name(self):
-    return self.first_name
+        return self.first_name
 
     User.add_to_class("__str__", get_first_name)
 
