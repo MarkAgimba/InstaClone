@@ -26,7 +26,7 @@ The program lets the user like photo
 * Postgres
 
 ## Setup/Installation Requirements
-* https://github.com/
+* https://github.com/MarkAgimba/InstaClone
 * download the zip file
 * unzip it on your documents folder
 * open the folder on your preferred text/code editor
