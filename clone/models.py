@@ -15,9 +15,10 @@ class Profile(models.Model):
     profile_avatar = models.ImageField(upload_to='Apic/')
     date = models.DateTimeField(auto_now_add=True, null= True)  
 
+    def get_first_name(self):
+    return self.first_name
 
-    def __str__(self):
-        return self.profile.user
+    User.add_to_class("__str__", get_first_name)
 
 
 class Image(models.Model):

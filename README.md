@@ -1,4 +1,5 @@
-# Instagram Clone
+# InstaClone
+
 #### This is a clone of the social media app Instagram , May 21, 2019
 #### By **Mark Agimba**
 ## Description
@@ -49,6 +50,7 @@ None
 * Bootstrap
 
 ## Support and contact details
-Contact me on github :
+Contact me on github :https://github.com/MarkAgimba
+
 ### License
 Mark Agimba - MIT (c)2019 LICENSE
