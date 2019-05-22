@@ -1,7 +1,7 @@
 # InstaClone
 
 #### This is a clone of the social media app Instagram ,Tuesday May 21, 2019
-![Screenshot](Instagram.png)
+![Screenshot](Screenshot.png)
 
 #### By **Mark Agimba**
 ## Description
