@@ -18,7 +18,7 @@
                 <div class="imagepadding">
                     <div class="panel panel-primary">           
                         <p class="usernamehome-dp">
-                            <img src="{% staticfiles 'images/images.jpeg' %}" class="circlehome-dp" alt="signuplogo ">
+                            <img src="{% static 'images/images.jpeg' %}" class="circlehome-dp" alt="signuplogo ">
                          {% if all_users %} {% for user in all_users %}
                             <strong> "{{user.user}}" </strong>
                         {% endfor %}{% else %}
@@ -36,10 +36,10 @@
 
                                 <span class="like-row">
                                     {% if liked %}
-                                    <img class"likedhrt" src="{% staticfiles 'images/liked.png' %}" alt="liked picture"class="img-responsive"> {% else %}
-                                    <img class="likehrt" src="{% staticfiles 'images/liked.png' %}" alt="not likedpicture" class="img-responsive"> {% endif %}
-                                    <img class="commenthrt" id='comment-icon' src="../../staticfiles/images/comment.png"class="img-responsive" alt=" commentImage">
-                                    <img class="savehrt" src="{% staticfiles 'images/usave.png' %}" alt="save picture">
+                                    <img class"likedhrt" src="{% static 'images/liked.png' %}" alt="liked picture"class="img-responsive"> {% else %}
+                                    <img class="likehrt" src="{% static 'images/liked.png' %}" alt="not likedpicture" class="img-responsive"> {% endif %}
+                                    <img class="commenthrt" id='comment-icon' src="../../static/images/comment.png"class="img-responsive" alt=" commentImage">
+                                    <img class="savehrt" src="{% static 'images/usave.png' %}" alt="save picture">
                                         
                                     </p>
                                 </span>

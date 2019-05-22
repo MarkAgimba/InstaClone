@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-# import dj_database_url
+import dj_database_url
 
 # def look_folder_tree(root):
 #     result = ()
@@ -35,7 +35,7 @@ SECRET_KEY = 'h@9(31z)gq+$ix%5g&yqk+lzomlkeaijoli_6sw9sv45b0y-+n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ ]
+ALLOWED_HOSTS = ['iclone1.herokuapp.com']
 
 
 # Application definition
@@ -86,17 +86,17 @@ WSGI_APPLICATION = 'insta.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'insta',
-        'USER': 'mark',
-        'PASSWORD': '12345'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'insta',
+#         'USER': 'mark',
+#         'PASSWORD': '12345'
+#     }
+# }
 
-# prod_db = dj_database_url.config(conn_max_age=500)
-# DATABASES = {'default': dj_database_url.config()}
+prod_db = dj_database_url.config(conn_max_age=500)
+DATABASES = {'default': dj_database_url.config()}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -134,10 +134,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-# STATICFILES_DIRS = [os.path.join(ROOT_PATH, 'staticfiles')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
 # STATICFILES_DIRS = look_folder_tree(STATIC_ROOT)
 #Login Redirecting to Home
 LOGIN_REDIRECT_URL = '/'
@@ -147,7 +147,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # django_heroku.settings(locals())
 
-# STATICFILES_DIRS= 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE= 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_USE_TLS=True
 EMAIL_HOST='smtp.gmail.com'
