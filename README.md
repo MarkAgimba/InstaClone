@@ -56,4 +56,4 @@ None
 Contact me on github :https://github.com/MarkAgimba
 
 ### License
-Mark Agimba - (MIT(https://github.com/MarkAgimba/InstaClone/blob/master/LICENSE))
+Mark Agimba - ([MIT License](https://github.com/MarkAgimba/InstaClone/blob/master/LICENSE))
