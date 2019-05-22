@@ -1,6 +1,6 @@
 # InstaClone
 
-#### This is a clone of the social media app Instagram , May 21, 2019
+#### This is a clone of the social media app Instagram ,Tuesday May 21, 2019
 #### By **Mark Agimba**
 ## Description
 This is an application that is similar the instagram application that lets a user like, comment on an photo, follow users and upload photos.
