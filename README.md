@@ -1,6 +1,8 @@
 # InstaClone
 
 #### This is a clone of the social media app Instagram ,Tuesday May 21, 2019
+![Screenshot](Instagram.png)
+
 #### By **Mark Agimba**
 ## Description
 This is an application that is similar the instagram application that lets a user like, comment on an photo, follow users and upload photos.
@@ -18,7 +20,7 @@ The program lets the user like photo
 * Example output: likes increases by one
 
 ## Live Site
-
+https://iclone1.herokuapp.com/
 
 ## Prerequisites
 * Python
@@ -41,6 +43,7 @@ The program lets the user like photo
 
 ## Known Bugs
 None
+
 ## Technologies used
 * Python3.7
 * Django
